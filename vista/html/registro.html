@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="../vista/css/formulario_registro.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x+
+    -icon" href="../vista/img/favicon.ico">
+</head>
+<body>
+    <div class="contenedor_form">
+        <form action="registro.php" method="post">
+            <div class="titulo__formulario">
+                <h2>Registrate</h2>
+            </div>
+            <div class="contenedor_labels__formulario">
+                <li>
+                    <input type="text" name="nombre-completo" id="nombre-completo" placeholder="Nombre completo" required>
+                </li>
+                <li>
+                   <input type="email" name="correo" id="correo" placeholder="Correo"  required>
+                </li>
+                
+                <li>
+                    <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña"  required>
+                    <input type="password" name="contraseniaV" id="contrasenia" placeholder="Confirmar contraseña"  required>
+                </li>
+                </li class="btnEnviar__formulario">
+                    <input type="submit" name="crear" class="enviar" >
+                </li>
+            </div>
+            
+            <p>¿Tienes una cuenta? <a href="login.php">Inicia sesión</a></p>
+        </form>    
+    </div>
+</body>
+</html>

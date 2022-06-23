@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fuentes -> Google*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* variables */
+:root {
+    --color-fondo: #6DA9DD;
+    --fuente: 'Poppins', serif;
+    --fuente-secundario: 'Poppins';
+    --color-btn: #1a73e8;
+    --color_botones_activo: #185abc;
+}
+
+body{
+    font-family: var(--fuente);
+    background-color: var(--color-fondo);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/** formulario*/
+form {
+    display: flex;
+    flex-direction: column;
+    width: 10;
+    background-color: red;
+}

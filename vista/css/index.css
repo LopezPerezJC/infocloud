@@ -1,0 +1,193 @@
+/* Fuentes -> Google*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* variables */
+:root {
+    --color-fondo: #6DA9DD;
+    --fuente: 'Arvo', serif;
+    --fuente-secundario: 'Poppins';
+    --color-fondo-btn: #1a73e8;
+    --color-titulo: #00B0FF;
+    --color-btn: #1a73e8;
+    --color_botones_activo: #185abc;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/*----------------------------*/
+/* Preloader */
+/*-------------------------------*/
+
+.hidden{
+    overflow: hidden;
+  }
+  
+  .centrado{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    width: 13px;
+    background: #cef;
+    animation: lds-facebook 1.8s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  
+  .lds-facebook div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+  }
+  
+  .lds-facebook div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+  }
+  
+  .lds-facebook div:nth-child(3) {
+    left: 45px;
+    animation-delay: 1.8s;
+  }
+  
+  @keyframes lds-facebook {
+    0% {
+      top: 6px;
+      height: 51px;
+    }
+  
+    50%,
+    100% {
+      top: 19px;
+      height: 26px;
+    }
+  }
+
+/* INDEX ESTILOS */
+
+body {
+  background-color: var(--color-fondo);
+}
+
+/* Estilos particulas */
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -5;
+}
+
+.contenedor_padre {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-image: url(../img/fondo_index.png);
+    object-fit: cover;
+}
+img {
+    z-index: -2;
+    height: auto;
+    width: 100%;
+}
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h2, h4 {
+    font-size: 6rem;
+}
+
+h2,
+h3,
+h4,
+a {
+    font-family: var(--fuente);
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+h4 {
+    font-weight:lighter;
+}
+.contenedor_enlaces {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 23rem;
+  flex-wrap: wrap;
+  font-family: var(--fuente-secundario);
+}
+
+a {
+  margin: 2rem 0;
+    font-size: 1.6rem;
+    border-radius: .4rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-registrar {
+  background: var(--color-btn);
+}
+
+.btn-acceder {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-color: #dadce0;
+  box-shadow: none;
+  color: #1a73e8;
+}
+
+.btn-registrar:hover {
+    box-shadow: none;
+    transform: ease all .3s;
+    background: var(--color_botones_activo);
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+
+.btn-acceder:hover{
+  background-color: #f6f9fe;
+  border-color: #1a73e8;
+}
+
+.bienvenida p{
+  margin: 2rem 0;
+  font-family: var(--fuente-secundario);
+  font-size: 1.8rem;
+  color: #fff;
+}

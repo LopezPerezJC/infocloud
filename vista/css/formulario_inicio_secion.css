@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* variables */
+:root {
+    --color-fondo: #6DA9DD;
+    --fuente: 'Poppins', serif;
+    --color-titulo: #1a73e8;
+    --color-btn: #1a73e8;
+    --degradado-color-primario: hsl(199, 100%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+/*------------ contenedor formulario ----------*/
+.contenedor_form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*------------FORMULARIO INICIO SECIÓN ----------*/
+form {
+    border-radius: .4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+      
+    margin-bottom: .8rem;
+    font-size: 1.6rem;
+    height: 25rem;  
+    width: 25rem;
+}
+
+/*------------titulo -> infocloud ----------*/
+.titulo__formulario {
+    min-height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__formulario > a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.titulo__formulario > a,
+input[type="submit"] {
+    color: var(--color-titulo);
+    font-weight: bold;
+}
+
+/*------------contenedor campos formulario ----------*/
+.contenedor_labels__formulario {
+    padding: .8rem;
+    width: 23rem;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: .8rem 0;
+}
+
+/*------------campos correo y contraseña ----------*/
+input[type="email"],
+input[type="password"] {
+    height: 3rem;
+    border: 1px solid var(--color-titulo);
+    border-radius: .4rem;
+    padding: .4rem;
+    outline: none;
+    font-family: 'Poppins';
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 2px solid var(--color-titulo);
+}
+
+/*------------boton enviar ----------*/
+input[type="submit"] {
+    background-color: var(--color-btn);
+    border: none;
+    border-radius: .4rem;
+    width: 100%;
+    margin: 2rem 0 0 0;
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    transform: ease all .3s;
+    background-color: #1a73e8;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+
+/*------------link registro----------*/
+p {
+    margin: 0 .8rem .8rem .8rem;
+    font-size: 1.5rem;
+}
+p a{
+    color: var(--color-btn);
+    text-decoration: none;
+}

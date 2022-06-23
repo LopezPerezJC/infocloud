@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* variables */
+:root {
+    --color-fondo: #6DA9DD;
+    --fuente: 'Poppins', serif;
+    --color-titulo: #00B0FF;
+    --color-btn:#1a73e8;
+    --degradado-color-primario: hsl(199, 100%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+
+/*------------ contenedor formulario ----------*/
+.contenedor_form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*------------FORMULARIO INICIO SECIÓN ----------*/
+form {
+    font-family: 'Poppins', Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+      
+    margin-bottom: .8rem;
+    border-radius: .4rem;
+    font-size: 1.6rem;
+    /* height: 35rem;  */ 
+    width: 35rem;
+}
+
+/*------------titulo -> infocloud ----------*/
+.titulo__formulario {
+    min-height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__formulario > h2 {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--color-btn);
+}
+
+input[type="submit"] {
+    color: #fff;
+    font-weight: bold;
+}
+
+/*------------contenedor campos formulario ----------*/
+.contenedor_labels__formulario {
+    padding: .8rem;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: .8rem 0;
+}
+
+li > label {
+    font-size: 1.5rem;
+    margin-bottom: .8rem;
+}
+
+/*------------campos correo y contraseña ----------*/
+input[type="password"] {
+    font-family: "Poppins";
+    height: 3rem;
+    border: 1px solid #1a73e8;
+    border-radius: .4rem;
+    padding: .4rem;
+    outline: none;
+    width: 48%;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    font-family: "Poppins";
+    height: 3rem;
+    border: 1px solid #1a73e8;
+    border-radius: .4rem;
+    padding: .4rem;
+    outline: none;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 2px solid #185abc;
+}
+
+
+/*------------boton enviar ----------*/
+input[type="submit"] {
+    border-radius: .4rem;
+    background-color: var(--color-btn);
+    border: none;
+    width: 100%;
+    margin: .8rem 0 0 0;
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+input[type="submit"]:hover {
+    transform: ease all .3s;
+    background-color: #1a73e8;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+
+/*------------link registro----------*/
+p {
+    margin: 2rem .8rem .8rem .8rem;
+    font-size: 1.5rem;
+}

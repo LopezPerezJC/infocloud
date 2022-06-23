@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - infoCloud</title>
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="/vista/css/Home.css">
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="../vista/img/favicon.ico">
+</head>
+
+<body class="contenedor-global">
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <!--LOGOTIPO-->
+        <div class="logotipo">
+            infoCloud
+        </div>
+
+        <!--BUSCADOR-->
+        <div class="contenedor-seccion-buscador">
+            <div class="contenedor-seleccion-tipo">
+                <i class="ri-filter-3-line"></i>
+                <!--filtro || lista de selección -->
+                <select name="seleccion-tipo-archivo" class="seleccion-tipo-archivo">
+                    <!-- Opciones -->
+                    <option value="imagenes" selected>Imagenes</option>
+                    <option value="Documentos">Documentos</option>
+                    <option value="Música">Música</option>
+                </select>
+            </div>
+            <div class="contenedor-buscador">
+                <button class="btn-buscar" id="btn-buscar">
+                    <i class="ri-search-line"></i>
+                </button>
+                <div class="contenedor-input-buscador">                    
+                    <input type="search" name="txt-buscar" id="txt-buscar" class="txt-buscar" value="Escribe el nombre de un archivo">
+                </div>
+            </div>
+        </div>
+
+        <!--MENÚ-->
+        <nav class="menu-navegacion">
+            <a href="#" class="link">
+                <i class="ri-user-fill"></i>
+                Perfil
+            </a>
+            <a href="#" class="link">
+                <i class="ri-information-line"></i>
+                Acerca de
+            </a>
+        </nav>
+    </header>
+
+    <!-- PRINCIPAL -->
+    <main class="principal">
+        <div class="contenedor-archivos-subidos" id="contenedor-archivos-subidos">
+            <!--Tabla contenedora del archivo-->
+            <table name="contenedor-archivo" class="contenedor-archivo">
+                <!--imagen archivo-->
+                <td name="img-archivo" class="img-archivo" id="img-archivo">
+                    <i class="ri-image-line"></i>
+                </td>
+                <!--Información archivo-->
+                <tr>
+                    <td>Nombre :</td>
+                    <td>foto unca informartica 601</td>
+                </tr>
+                <tr>
+                    <td>Tipo :</td>
+                    <td>Imagen</td>
+                </tr>
+                <tr>
+                    <td>Tamaño :</td>
+                    <td>65</td>
+                </tr>
+            </table>
+
+            <!--Tabla contenedora del archivo-->
+            <table name="contenedor-archivo" class="contenedor-archivo">
+                <!--imagen archivo-->
+                <td name="img-archivo" class="img-archivo" id="img-archivo">
+                    <i class="ri-image-line"></i>
+                </td>
+                <!--Información archivo-->
+                <tr>
+                    <td>Nombre :</td>
+                    <td>foto unca informartica 601</td>
+                </tr>
+                <tr>
+                    <td>Tipo :</td>
+                    <td>Imagen</td>
+                </tr>
+                <tr>
+                    <td>Tamaño :</td>
+                    <td>65</td>
+                </tr>
+            </table>
+
+            <!--Tabla contenedora del archivo-->
+            <table name="contenedor-archivo" class="contenedor-archivo">
+                <!--imagen archivo-->
+                <td name="img-archivo" class="img-archivo" id="img-archivo">
+                    <i class="ri-image-line"></i>
+                </td>
+                <!--Información archivo-->
+                <tr>
+                    <td>Nombre :</td>
+                    <td>foto unca informartica 601</td>
+                </tr>
+                <tr>
+                    <td>Tipo :</td>
+                    <td>Imagen</td>
+                </tr>
+                <tr>
+                    <td>Tamaño :</td>
+                    <td>65</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <!-- MENU LATERAL -->
+    <aside class="contenedor-menu-lateral">
+        <a href="#" class="btn btn-lateral">
+            Nuevo <i class="ri-add-line"></i>
+        </a>
+        <a href="#" class="btn btn-lateral">
+            Imagenes <i class="ri-landscape-fill"></i>
+        </a>
+        <a href="#" class="btn btn-lateral">
+            Archivos <i class="ri-file-list-3-fill"></i>
+        </a>
+        <!-- Espacio revisar -->
+        <!-- <a href="#" class="btn btn-lateral">
+                    Almacenamiento <i class="fa-solid fa-plus"></i>
+                </a> -->
+    </aside>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="piePagina">
+        <p>
+            <i class="fa-solid fa-users-line"></i>
+            Desarrollado por Grupo 601, Informática Universidad de la Cañada
+        </p>
+    </footer>
+</body>
+
+</html>

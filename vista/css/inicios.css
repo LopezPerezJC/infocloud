@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+/*----------------------------*/
+/* Preloader */
+/*-------------------------------*/
+/*
+.hidden{
+  overflow: hidden;
+}
+
+.centrado{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #cef;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 1.2s;
+}
+
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+
+  50%,
+  100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+/* fin preolader*/
+
+body h3 {
+
+  font-family: 'Arial';
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.form-register h4
+{
+  text-align: center;
+  font-family: 'Times New Roman';
+  font-size: 30px;
+
+
+}
+
+.form-register ul li{
+  
+  list-style: none;
+}
+.form-register {
+  width: 400px;
+  background:darkcyan;
+  padding: 30px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px black;
+}
+
+.form-register.h4 {
+  font-size: 2020px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: black;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+  list-style: none;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: aqua;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+/*
+.form-register .botons {
+  width:40%;
+  margin-right: 2000 px;
+  background: #000;
+  padding: 12px;
+  color: blue;
+  margin: 16px 0;
+  font-size: 16px;
+  position: relative;
+}*/
+
+.contenedor_botones {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: row;
+}
+/*   --------------------------*/
+.botons {
+  background: #00366b;
+  padding: 15px 10px;
+  display: inline-block;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0px 0px 5px #024281;
+}
+button:hover {
+  box-shadow: none;
+}
+.naranja {
+  background: #f5880c;
+  box-shadow: 0px 0px 5px #f79256;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" href="../vista/css/formulario_inicio_secion.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="../vista/img/favicon.ico">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div id="particles-js"></div> -->
+    <div class="contenedor_form">
+        <form action="login.php" method="post">
+            <div class="titulo__formulario">
+                <a href="../index.php">Inicia sesión</a>
+            </div>
+            <div class="contenedor_labels__formulario">
+                <li>
+                    <input type="email" name="correo" id="correo" placeholder="Correo" required>
+                </li>
+                <li>
+                    <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña"  required>
+                </li>
+                <li>
+                </li class="btnEnviar__formulario">
+                    <input type="submit" name="acceder" class="enviar" value="Acceder">
+                </li>  
+            </div>
+            
+            <p>¿No tienes una cuenta? <a href="registro.php">Registrate</a></p>
+        </form>        
+    </div>
+
+    <!-- ARCHIVOS PARTICULAS -->
+    <!-- <script src="../vista/js/particles.js"></script>
+    <script src="../vista/js/app.js"></script> -->
+</body>
+</html>
